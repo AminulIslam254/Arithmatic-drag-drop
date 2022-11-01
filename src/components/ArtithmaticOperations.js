@@ -104,7 +104,7 @@ const ArtithmaticOperations = () => {
         setItemsindiv3(oldArray => [...oldArray, val]);
     };
     const handleEvaluateClick = () => {
-        axios.post("http://localhost:5000/register", itemsindiv3)
+        axios.post("https://arithmatic-operation-drag-drop.herokuapp.com/register", itemsindiv3)
             .then(res => {
                 console.log(res.data);
                 alert(res.data);
